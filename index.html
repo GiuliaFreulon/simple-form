@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encontre sua vaga de desenvolvedor</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h3>Encontre sua vaga para desenvolvedor de software</h3>
+        </div>
+        <div class="form-container">
+            <div class="form-header">
+                <p>Formulário</p>
+            </div>
+            <div class="form-body">
+                <h1 class="form-title">Preencha suas informações:</h1>
+                <form>
+                    <div class="box-input">
+                        <label for="name">Nome completo <span class="required-field">*</span></label>
+                        <input 
+                            type="text" 
+                            name="name" 
+                            id="name" 
+                            class="block" 
+                            placeholder="seu nome completo"
+                            minlength="1"
+                            required
+                        />
+                    </div>
+                    <div class="box-input">
+                        <label for="idade">Idade <span class="required-field">*</span></label>
+                        <input 
+                            type="number" 
+                            name="idade" 
+                            id="idade" 
+                            class="block" 
+                            placeholder="sua idade"
+                            minlength="1"
+                            required
+                        />
+                    </div>
+                    <div class="box-input">
+                        <label for="descricao">Fale sobre você (opcional)</label>
+                        <textarea name="descricao" id="descricao" class="block" placeholder="descreva sua personalidade, suas afinidades e experiências"></textarea>
+                    </div>
+                    <div class="box-input">
+                        <label for="education">Escolaridade: <span class="required-field">*</span></label>
+                        <select name="education">
+                            <option value="medio-incompleto">Ensino Médio Incompleto</option>
+                            <option value="medio-completo">Ensino Médio Completo</option>
+                            <option value="superior-incompleto">Superior Incompleto</option>
+                            <option value="superior-completo">Superior Completo</option>
+                            <option value="mestrado">Mestrado</option>
+                            <option value="doutorado">Doutorado</option>
+                        </select>
+                    </div>
+                    <div class="box-input">
+                        <label for="formacao">Formação (opcional)</label>
+                        <input 
+                            type="text" 
+                            name="formacao" 
+                            id="formacao" 
+                            class="block" 
+                            placeholder="sua instituição de ensino, caso tenha"
+                            minlength="1"
+                        />
+                    </div>
+                    <div class="box-input">
+                        <label for="data">Data de formação (opcional)</label>
+                        <input 
+                            type="date" 
+                            name="data" 
+                            id="data" 
+                            class="block" 
+                        />
+                    </div>
+                    <div class="box-input">
+                        <label for="area">Área de atuação: <span class="required-field">*</span></label>
+                        <select name="area">
+                            <option value="back-end">Back-End</option>
+                            <option value="front-end">Front-End</option>
+                            <option value="full-stack">Full-Stack</option>
+                            <option value="mobile">Mobile</option>
+                            <option value="web">Desenvolvedor Web</option>
+                            <option value="jogos">Desenvolvedor de Jogos</option>
+                        </select>
+                    </div>
+                    <div class="languages-box">
+                        <p>Linguagens de Programação/Marcação:</p>
+                        <ul class="languages-list">
+                            <li>
+                                <input type="checkbox" id="java" name="languages[]" value="java">
+                                <label for="java">Java</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="c" name="languages[]" value="c">
+                                <label for="c">C</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="cpp" name="languages[]" value="cpp">
+                                <label for="cpp">C++</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="csharp" name="languages[]" value="csharp">
+                                <label for="csharp">C#</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="python" name="languages[]" value="python">
+                                <label for="python">Python</label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="languages-box">
+                        <ul class="languages-list">
+                            <li>
+                                <input type="checkbox" id="php" name="languages[]" value="php">
+                                <label for="php">PHP</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="sql" name="languages[]" value="sql">
+                                <label for="sql">SQL</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="javascript" name="languages[]" value="javascript">
+                                <label for="javascript">Javascript</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="html" name="languages[]" value="html">
+                                <label for="html">HTML</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="css" name="languages[]" value="css">
+                                <label for="css">CSS</label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="box-input">
+                        <p>Nível de cargo: <span class="required-field">*</span></p>
+                        <input type="radio" id="junior" name="nivel" >
+                        <label for="junior">Júnior</label>
+                        <input type="radio" id="pleno" name="nivel" >
+                        <label for="pleno">Pleno</label>
+                        <input type="radio" id="senior" name="nivel">
+                        <label for="senior">Sênior</label>
+                    </div>
+                    <div class="box-input">
+                        <p>Currículo: <span class="required-field">*</span></p>
+                        <input type="file" id="curriculo" name="curriculo" required>
+                    </div>
+                   
+                    <div class="box-btn">
+                        <input type="submit" value="Enviar" class="btn-submit">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
